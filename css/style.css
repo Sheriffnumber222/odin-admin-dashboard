@@ -58,3 +58,54 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
+#top-left-header {
+    display:grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+}
+.search-bar {
+    background-color: var(--page-gray);
+    height: 30px;
+    border-radius: 15px;
+}
+#top-right-header {
+    display: grid;
+    grid-template-columns: 1fr 20px 40px 20px 1fr; /*2nd and 4th value are padding*/
+    align-items: center;
+}
+.notification-bell {
+    justify-self: end;
+}
+#tr-user-img {
+    grid-column: 3;
+}
+#tr-name {
+    justify-self: start;
+    grid-column: 5;
+    font-weight: bold;
+}
+#bottom-left-header {
+    display: grid;
+    grid-template: 1fr 1fr / 80px 1fr;
+}
+#bl-user-img {
+    grid-row: 1 / 3;;
+}
+#bl-greeting {
+    font-weight: bold;
+    font-size: .8rem;
+    align-self: center;
+}
+#bl-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#bottom-right-header button {
+    background-color: var(--prime-color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 80px;
+    margin-right: 20px;
+}
