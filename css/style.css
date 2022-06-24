@@ -58,10 +58,17 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
+#header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 #top-left-header {
     display:grid;
     grid-template-columns: 25px 1fr;
     align-items: center;
+    align-self: start;
 }
 .search-bar {
     background-color: var(--page-gray);
@@ -70,8 +77,9 @@ body {
 }
 #top-right-header {
     display: grid;
-    grid-template-columns: 1fr 20px 40px 20px 1fr; /*2nd and 4th value are padding*/
+    grid-template-columns: 1fr 20px 40px 20px 2fr; /*2nd and 4th value are padding*/
     align-items: center;
+    align-self: start;
 }
 .notification-bell {
     justify-self: end;
@@ -87,6 +95,7 @@ body {
 #bottom-left-header {
     display: grid;
     grid-template: 1fr 1fr / 80px 1fr;
+    align-self: end;
 }
 #bl-user-img {
     grid-row: 1 / 3;;
@@ -100,6 +109,9 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
 }
+#bottom-right-header {
+    padding-top: 40px;
+}
 #bottom-right-header button {
     background-color: var(--prime-color);
     color: white;
@@ -107,5 +119,7 @@ body {
     border-radius: 15px;
     height: 30px;
     width: 80px;
+}
+.btn-new, .btn-upload {
     margin-right: 20px;
 }
