@@ -1,3 +1,22 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    background-color:lightgray;
+    border: solid 2px grey;
+}
+#sidebar {
+    background-color:lightblue;
+    border: solid 2px blue;
+}
+#header {
+    background-color:lightcoral;
+    border: solid 2px red;
+}
+#main-content {
+    background-color:lightgreen;
+    border: solid 2px green;
 }
