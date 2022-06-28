@@ -158,8 +158,32 @@ body {
     gap: 20px;
 }
 #announcements {
-    border: solid 5px red;
+    display: grid;
+    grid-template-rows: 30px 1fr;
 }
 #trending {
-    border: solid 5px red;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+#announcements-card, #trending-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
+}
+.single-announcement {
+    align-self: center;
+}
+.single-announcement h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.single-announcement p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.grid-line {
+    background-color: lightgrey;
+    border-radius: 1px;
 }
