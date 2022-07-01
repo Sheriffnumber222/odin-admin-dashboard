@@ -1,7 +1,7 @@
 :root {
-    --prime-color: skyblue;
-    --second-color: orange;
-    --page-gray: lightgray;
+    --prime-color: #317773;
+    --second-color: #E2D1F9;
+    --page-gray: #e5e7eb;
 }
 * {
     font-family: Arial, Helvetica, sans-serif;
